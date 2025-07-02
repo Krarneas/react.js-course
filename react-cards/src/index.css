@@ -38,3 +38,16 @@
   border: none;
   cursor: pointer;
 } */
+
+.student{
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid hsl(0, 0%, 50%, 0.8);
+  width: 250px;
+  display: inline-block;
+}
+
+.student p{
+  margin: 0;
+}
