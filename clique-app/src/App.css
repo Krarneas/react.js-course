@@ -1,0 +1,26 @@
+body {
+  background:
+    url('assets/icon-loop2.png') repeat,
+    radial-gradient(
+      circle at bottom right,
+      #ff00cc 0%,
+      #32005c 60%,
+      #1e003d 100%
+    );
+  background-size: 256px auto, cover; /* first is for pattern, second is for gradient */
+  background-position: 0 0, center;
+  background-attachment: scroll, fixed; /* gradient stays, pattern moves */
+  height: 100vh;
+  width: 100%;
+  animation: animate 210s linear infinite;
+}
+
+
+@keyframes animate{
+  0%{
+    background-position: calc(256px * 10) calc(256px * 10), center;
+  }
+  100%{
+    background-position: 0 0, center;
+  }
+}
