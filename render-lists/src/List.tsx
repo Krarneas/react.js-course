@@ -5,11 +5,14 @@ interface Item {
 }
 
 interface ListProps{
-    items: Item[];
-    category: string;
+    items?: Item[];  //optional to set for default properties
+    category?: string;
 }
 
-export default function List({items, category}: ListProps){
+export default function List({
+    items = [],
+    category = "Uncategorized"
+    }: ListProps){
 
     // const fruits = [{id: 1, name: "apple", calories: 95},
     //                 {id: 2, name: "orange", calories: 45},
