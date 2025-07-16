@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function SignUpForm() {
+export default function SignUpForm({ switchForm }) {
   return (
     <div className="form-box">
       <h2 className="form-title">Create an account</h2>
       <p className="form-subtext">
-        Already have an account? <a href="#" className="link">Log in</a>
+        Already have an account? <button className="link" onClick={switchForm}>Log in</button>
       </p>
       <input className="input" placeholder="First Name" />
       <input className="input" placeholder="Last Name" />
